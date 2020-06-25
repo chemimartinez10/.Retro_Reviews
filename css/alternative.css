@@ -172,6 +172,7 @@ nav{
   #logo{font-size: 1.38em; display: inline-flex;}
   .logo{margin: auto; width: 100%; display: flex; justify-content: center; padding-bottom: 10px;}
   .contenedor{padding-top: 0px;}
+  .hoja{grid-template-rows: repeat(7, 120px);}
 }
 .navlink:hover {
   position: relative;
