@@ -114,6 +114,7 @@ nav{
   border: solid 0.2em white;
   margin: 0;
   text-align: left;
+  position: sticky;
 }
 footer{
   height: 150px;
@@ -121,6 +122,7 @@ footer{
   border: solid 0.2em white;
   margin: 0;
   text-align: left;
+  color: white;
   
 }
 .accesos{
