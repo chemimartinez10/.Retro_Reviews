@@ -1,0 +1,36 @@
+{
+  "name": "retro_reviews_",
+  "version": "1.0.0",
+  "description": "Web site for gamers and entertainment",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon ./js/server.js",
+    "start": "node ./js/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemimartinez10/.Retro_Reviews.git"
+  },
+  "keywords": [
+    "Reviews",
+    "Games",
+    "videogames",
+    "consoles",
+    "pc",
+    "fun",
+    "electronics",
+    "gamers"
+  ],
+  "author": "chemiVoid0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chemimartinez10/.Retro_Reviews/issues"
+  },
+  "homepage": "https://github.com/chemimartinez10/.Retro_Reviews#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
