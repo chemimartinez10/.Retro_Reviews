@@ -1,0 +1,42 @@
+{
+	"name": "retro-reviews-client",
+	"private": true,
+	"version": "0.0.0",
+	"description": "Web app for gamers and entertainment",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chemimartinez10/.Retro_Reviews.git"
+	},
+	"keywords": [
+		"Reviews",
+		"Games",
+		"videogames",
+		"consoles",
+		"pc",
+		"fun",
+		"electronics",
+		"gamers"
+	],
+	"author": "chemimartinez",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/chemimartinez10/.Retro_Reviews/issues"
+	},
+	"homepage": "https://github.com/chemimartinez10/.Retro_Reviews#readme",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.0",
+		"@types/react-dom": "^18.0.0",
+		"@vitejs/plugin-react": "^1.3.0",
+		"typescript": "^4.6.3",
+		"vite": "^2.9.9"
+	}
+}
