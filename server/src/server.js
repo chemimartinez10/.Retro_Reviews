@@ -1,5 +1,5 @@
 const http = require('http')
-const { getVideogames, getVideogame, createVideogame, updateVideogame, deleteVideogame } = require('./src/controllers/videogamesController')
+const { getVideogames, getVideogame, createVideogame, updateVideogame, deleteVideogame } = require('./controllers/videogamesController')
 
 const server = http.createServer((req, res) => {
     if (req.url === '/api/videogames' && req.method === 'GET') {
