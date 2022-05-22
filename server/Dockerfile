@@ -1,4 +1,5 @@
 FROM node:18-alpine3.15
 WORKDIR /code
-COPY . /code/
+COPY package.json /code/
 RUN npm install
+COPY . /code/
