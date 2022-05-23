@@ -1,0 +1,138 @@
+
+main{
+    color: var(--color-base);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+main > section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.capsule {
+    padding: .5rem;
+    transition: transform 0.7s;
+    height: 300px;
+    border: 4px solid transparent;
+}
+
+.capsule:hover,
+.grid-item:hover {
+    box-shadow: 0 0 20px #444a;
+    border-color: var(--color-base);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.logo {
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    display: inline-block;
+}
+
+
+
+/* LAYOUT */
+
+.hoja {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 12px;
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+}
+
+.hoja>div {
+    background-color: var(--color-base);
+    color: var(--color-negative);
+}
+
+
+#primer_encabezado {
+    grid-row: 1 / span 1;
+    grid-template-columns: 1 / span 1;
+    align-self: center;
+}
+
+.list {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    grid-auto-flow: row dense;
+    gap: .5rem;
+}
+
+.hoja>.grid-item:nth-child(7n+1) {
+    grid-column: 1 / span 3;
+}
+
+.hoja>.grid-item:nth-child(7n+2) {
+    grid-column: 4 / span 2;
+}
+
+.hoja>.grid-item:nth-child(7n+3) {
+    grid-column: 1 / span 5;
+}
+.hoja>.grid-item:nth-child(7n+6) {
+    grid-column: 3 / span 2;
+}
+
+/*   .capsule{
+    background-image: url(../img/capsules/God_Of_War_Collection.jpg);
+    background-size:contain;
+  } */
+
+@media only screen and (max-width: 1000px) {
+
+    /* .list {
+		grid-template-columns: repeat(4, 1fr);
+	} */
+    .hoja {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    /* .list {
+		grid-template-columns: repeat(3, 1fr);
+	} */
+    .hoja>.grid-item:nth-child(7n+1),
+    .hoja>.grid-item:nth-child(7n+2) {
+        grid-column: 1 / -1;
+    }
+
+    .hoja>.grid-item:nth-child(7n+4) {
+        grid-column: span 3;
+    }
+
+    .hoja>.grid-item:nth-child(7n+5),
+    .hoja>.grid-item:nth-child(7n+6) {
+        grid-column: span 2;
+    }
+
+    .hoja>.grid-item:nth-child(7n+7) {
+        grid-column: span 3;
+    }
+
+    .hoja>.grid-item:nth-child(7n+1) {
+        grid-column: span 5;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* .list {
+		grid-template-columns: repeat(2, 1fr);
+	} */
+    .hoja>.grid-item:nth-child(7n + 4) {
+        grid-column: 1 / -1;
+    }
+    .hoja>.grid-item:nth-child(7n + 5) {
+        grid-column: 1 / -1;
+    }
+}

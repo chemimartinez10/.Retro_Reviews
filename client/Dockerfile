@@ -1,4 +1,4 @@
-FROM node:18-alpine3.15
+FROM node:18-slim
 WORKDIR /code
 COPY package.json /code/
 RUN npm install

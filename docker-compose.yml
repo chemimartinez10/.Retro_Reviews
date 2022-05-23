@@ -14,6 +14,7 @@ services:
     command: npm run dev
     volumes:
       - ./server:/code
+      - /code/node_modules
     ports:
       - "4000:4000"
     environment:
@@ -29,6 +30,7 @@ services:
     command: npm run dev
     volumes:
       - ./client:/code
+      - /code/node_modules
     ports:
       - "3000:3000"
     environment:

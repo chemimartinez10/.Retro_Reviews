@@ -1,0 +1,8 @@
+footer {
+    height: 150px;
+    width: 100%;
+    border: solid 0.2em var(--color-base);
+    margin: 0;
+    text-align: left;
+    color: var(--color-base);
+}
